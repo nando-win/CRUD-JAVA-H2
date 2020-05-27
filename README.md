@@ -1,7 +1,5 @@
 
-## Tecnologias utilizadas
-
-Nessa solução deve utilizada as seguintes tecnologias:
+Tecnologias:
 - Java 1.8
 - Maven
 - SpringBoot 2+
@@ -15,35 +13,35 @@ Nessa solução deve utilizada as seguintes tecnologias:
 - O RH da empresa solicitou a equipe de Sistemas uma aplicação para gerenciar informações dos colaboradores da empresa.
 Seu objetivo é desenvolver uma API Rest para que a equipe de front-end realize as consultas nos endpoints e retorne as informações solicitadas pelo RH.
 Crie a API seguindo as orientações abaixo:
-> Regras
-- Projeto de conter duas branchs *develop* e *feature/crud-seunome* tudo deve ser desenvolvido na branch *feature/crud-seunome* depois realizado um merge para *develop*.
-- O prazo de enviar o código é de **48hs** a partir do compartilhamento do repositório
-- Enviar o repositório após concluir
-- Caso não conclua no prazo, informar em qual fase e item você conseguiu chegar.
-> Fase 01 - Estruturar Projeto: 
-1. Criar o projeto java usando maven para gerenciamento de suas dependencias.
-2. Configure o Banco de dados: **H2** em seu projeto
-3. Configure o Console H2 para : /console
-4. Usuario de acesso ao banco de dados: **user**
-5. Password de acesso ao banco de dados: **password**
-6. O projeto deve conter duas entidades pessoas e setor. A entidade pessoas deve conter os dados referente ao colaborador. A entidade setor deve conter os dados do setor refente a 
-pessoa cadastrada.
+
+> Fase 01 - Regras
+1. Clonar esse repositório com a estrutura basica da Api.
+2. Criar duas branchs *develop* e *feature/crud-seunome* tudo deve ser desenvolvido na branch *feature/crud-seunome* depois realizado um merge para *develop*.
+3. O prazo de enviar o código é de **48hs** a partir do compartilhamento do repositório
+4. Enviar para repositório após concluir
+> informações do projeto: 
+- Banco de dados: **H2**
+- Console H2: /h2-console
+- Usuario de acesso ao banco de dados: **user**
+- Password de acesso ao banco de dados: **password**
+
 > Fase 02 - Estruturar API
-7. A porta padrão do projeto deve ser ser 9090
-8. O context-path da aplicação de ser */api*
-> Fase 03 - Rotas da API
-9. Cadastrar Pessoas /  Cadastrar Setor
-10. Atualizar Pessoa / Atualizar Setor
-11. Deletar Pessoas / Deletar Setor
-12. Listar Pessoas / Listar Setor
-13. Todas as rotas devem ser validadas
+5. A porta padrão do projeto deve ser ser 9090
+6. O context-path da aplicação de ser */api*
+> Fase 03 - Rotas
+7. Cadastrar Pessoas /  Cadastrar Setor
+8. Atualizar Pessoa / Atualizar Setor
+9. Deletar Pessoas / Deletar Setor
+10. Listar Pessoas / Listar Setor
+11. Todas as rotas devem ser validadas
+> Fase 04 - Segurança
+12. Configurar uma Autenticação básica *(Basic Authentication)*
+13. Desativar a segurança para a rota de *Listar Pessoas*
 > Fase 05 - Testes
 14. Implemente classes de teste usando o framework *jUnit* ou *Mockito* teste no minimo 5 rotas;
-> Fase 06 - Segurança
-15. Configure uma Autenticação básica *(Basic Authentication)*
-> Fase 08 - Deploy
-16. Gere uma imagem docker e envie para o https://hub.docker.com/
-> Fase 09 - Bonus
-* 16.1\. documente a API usando Swagger
+> Fase 06 - Deploy
+15. Gere uma imagem docker e envie para o https://hub.docker.com/
+> Fase 07 - Bonus
+* 15.1\. documente a API usando Swagger
 
 
